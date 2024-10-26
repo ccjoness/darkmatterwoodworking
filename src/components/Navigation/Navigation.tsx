@@ -27,6 +27,7 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import DmwLogo from '../../img/dmw_logo_init_white_30px.png';
 import classes from './Navigation.module.css';
 
 const mockdata = [
@@ -67,29 +68,29 @@ export function Navigation() {
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
 
-  const links = mockdata.map((item) => (
-    <UnstyledButton className={classes.subLink} key={item.title}>
-      <Group wrap="nowrap" align="flex-start">
-        <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.blue[6]} />
-        </ThemeIcon>
-        <div>
-          <Text size="sm" fw={500}>
-            {item.title}
-          </Text>
-          <Text size="xs" c="dimmed">
-            {item.description}
-          </Text>
-        </div>
-      </Group>
-    </UnstyledButton>
-  ));
+  // const links = mockdata.map((item) => (
+  //   <UnstyledButton className={classes.subLink} key={item.title}>
+  //     <Group wrap="nowrap" align="flex-start">
+  //       <ThemeIcon size={34} variant="default" radius="md">
+  //         <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.blue[6]} />
+  //       </ThemeIcon>
+  //       <div>
+  //         <Text size="sm" fw={500}>
+  //           {item.title}
+  //         </Text>
+  //         <Text size="xs" c="dimmed">
+  //           {item.description}
+  //         </Text>
+  //       </div>
+  //     </Group>
+  //   </UnstyledButton>
+  // ));
 
   return (
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          Dark Matter Woodworking
+          <img src={DmwLogo} alt="Dmw Logo" />
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.link}>
               Home
@@ -153,7 +154,7 @@ export function Navigation() {
         </Group>
       </header>
 
-      <Drawer
+      {/* <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
         size="100%"
@@ -194,7 +195,7 @@ export function Navigation() {
             <Button>Sign up</Button>
           </Group>
         </ScrollArea>
-      </Drawer>
+      </Drawer> */}
     </Box>
   );
 }

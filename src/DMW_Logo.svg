@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1260.71217 1074.82214">
+  <defs>
+    <style>
+      .g {
+        mask: url(#b);
+      }
+
+      .h {
+        fill: #fff;
+      }
+
+      .i {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 3;
+        stroke-width: 3px;
+      }
+
+      .j {
+        letter-spacing: -.01399em;
+      }
+
+      .k {
+        filter: url(#c);
+      }
+
+      .l {
+        font-size: 101.3753px;
+      }
+
+      .l, .m {
+        font-family: SourceSansRoman-Regular, 'Source Sans Variable';
+        font-variation-settings: 'wght' 400;
+      }
+
+      .m {
+        font-size: 368.41263px;
+      }
+    </style>
+    <filter id="c" x="0" y="0" width="1260.71217" height="1074.82214" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="cm" in2="bg"/>
+    </filter>
+    <mask id="b" data-name="mask" x="0" y="0" width="1260.71217" height="1074.82214" maskUnits="userSpaceOnUse">
+      <g class="k">
+        <rect class="h" x="41.90725" y="480.90198" width="1176.94244" height="403.02861"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="a" data-name="Layer 1">
+    <g class="g">
+      <path d="M630.37846,0c208.61205,357.8436,420.42858,715.15581,630.33371,1073.63551-178.4197,1.0077-449.88327.9493-630.33404,1.18663-180.99066-.34338-451.21782-.13948-630.37813-1.16137C209.91459,715.17743,421.75957,357.84521,630.37846,0h0ZM630.37846,3.65182C427.3441,358.69426,227.43289,714.33507,25.80366,1068.77438c0,.00001-8.57107-14.84557-8.57107-14.84557,170.78412-.60416,440.3098-1.14649,613.14607-1.09832,173.35422-.17189,441.64242.53524,613.14442,1.12431.00126.00049-8.54684,14.80628-8.54684,14.80628C1033.33335,714.31785,833.4189,358.69896,630.37846,3.65182h0Z"/>
+    </g>
+  </g>
+  <g id="f" data-name="Layer 4">
+    <g>
+      <text class="m" transform="translate(162.44511 746.25072)"><tspan x="0" y="0">D M W</tspan></text>
+      <g>
+        <text class="l" transform="translate(303.34648 858.38255)"><tspan x="0" y="0"> </tspan><tspan class="j" x="20.2749" y="0">B</tspan><tspan x="78.46484" y="0">y Chris Jones </tspan></text>
+        <line class="i" x1="122.57479" y1="829.53409" x2="303.07226" y2="829.53409"/>
+        <line class="i" x1="957.68468" y1="829.53409" x2="1138.18216" y2="829.53409"/>
+      </g>
+    </g>
+  </g>
+</svg>

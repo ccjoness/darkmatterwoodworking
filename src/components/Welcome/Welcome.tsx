@@ -13,7 +13,9 @@ export function Welcome() {
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
         This is the future home of Dark Matter Woodworking. If you have any questions, please
         contact us at{' '}
-        <Anchor href="mailto:chris.charles.jones@gmail.com">chris.charles.jones@gmail.com</Anchor>
+        <Anchor href="mailto:chris@darkmatterwoodworking.com">
+          chris@darkmatterwoodworking.com
+        </Anchor>
       </Text>
     </>
   );
