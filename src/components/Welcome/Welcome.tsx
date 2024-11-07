@@ -1,22 +1,38 @@
-import { Anchor, Text, Title } from '@mantine/core';
+import { createRef } from 'react';
+import axios from 'axios';
+import ReCAPTCHA from 'react-google-recaptcha';
+import {
+  Anchor,
+  Button,
+  Container,
+  Group,
+  Paper,
+  SimpleGrid,
+  Space,
+  Text,
+  Textarea,
+  TextInput,
+  Title,
+} from '@mantine/core';
+import { useForm } from '@mantine/form';
+import ContactForm from '../ContactForm/ContactForm';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
   return (
-    <>
+    <Container fluid>
       <Title className={classes.title} ta="center" mt={100}>
-        Welcome to <br />
-        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+        <Text
+          inherit
+          variant="gradient"
+          component="span"
+          gradient={{ from: '#673517', to: '#ffffff' }}
+        >
           Dark Matter Woodworking
         </Text>
       </Title>
-      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This is the future home of Dark Matter Woodworking. If you have any questions, please
-        contact us at{' '}
-        <Anchor href="mailto:chris@darkmatterwoodworking.com">
-          chris@darkmatterwoodworking.com
-        </Anchor>
-      </Text>
-    </>
+      <Space h="md" />
+      <ContactForm />
+    </Container>
   );
 }
