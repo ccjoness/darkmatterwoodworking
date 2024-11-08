@@ -130,8 +130,9 @@ const ContactForm = () => {
         <Paper shadow="md" radius="lg">
           <div className={classes.wrapper}>
             <Text c="dimmed" ta="center" size="lg" mx="auto" mt="xl">
-              I am still working on building out this site. If you would like to inquire about
-              custom woodworking or if you have any questions, please don't hesitate to contact me.
+              This site is a work in progress. <br />
+              If you would like to inquire about custom woodworking custom woodworking or if you
+              have any questions, please don't hesitate to contact me.
             </Text>
 
             <form id="dmw_contact_form" onSubmit={form.onSubmit(handleSubmit)}>

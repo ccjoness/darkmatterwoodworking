@@ -8,6 +8,7 @@ import {
   Center,
   Container,
   Group,
+  Image,
   Paper,
   SimpleGrid,
   Space,
@@ -16,6 +17,8 @@ import {
   Textarea,
   TextInput,
   Title,
+  useComputedColorScheme,
+  useMantineColorScheme,
 } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import dmwTitleLogoWhite from '../../img/dmw-title-logo-white.svg';
@@ -23,11 +26,12 @@ import ContactForm from '../ContactForm/ContactForm';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
+  const computedColorScheme = useComputedColorScheme('dark');
   return (
     <Container fluid className={classes.welcomeContainer}>
       <Center>
-        <img
-          className={classes.dmwTitleLogoWhite}
+        <Image
+          className={`${classes.dmwTitleLogo} ${computedColorScheme === 'dark' ? classes.dmwTitleLogoWhite : classes.dmwTitleLogoDark}`}
           src={dmwTitleLogoWhite}
           alt="Dark Matter Woodworking Logo"
         />
