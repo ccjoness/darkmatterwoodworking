@@ -8,3 +8,10 @@
     font-size: rem(50px);
   }
 }
+.dmwTitleLogoWhite {
+  width: rem(50%);
+  padding-top: rem(10px);
+}
+.welcomeContainer {
+  max-width: rem(2000px);
+}

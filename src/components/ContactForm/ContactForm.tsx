@@ -2,6 +2,7 @@ import { createRef, useEffect, useState } from 'react';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 import {
+  Anchor,
   Box,
   Button,
   Container,
@@ -17,6 +18,8 @@ import {
 import { useForm } from '@mantine/form';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './ContactForm.module.css';
+
+import './ContactForm.css';
 
 const ContactForm = () => {
   const recaptchaRef = createRef<ReCAPTCHA>();
@@ -157,6 +160,21 @@ const ContactForm = () => {
                 size="invisible"
                 sitekey="6LcHY3gqAAAAAEr1_iIhP9plQwiA6AmdxAPV14WN"
               />
+              <Text c="dimmed" ta="right" size="xs" mx="auto" mt="xs">
+                This site is protected by reCAPTCHA and the Google{' '}
+                <Anchor
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  underline="always"
+                >
+                  Privacy Policy
+                </Anchor>{' '}
+                and{' '}
+                <Anchor href="https://policies.google.com/terms" target="_blank" underline="always">
+                  Terms of Service
+                </Anchor>{' '}
+                apply.
+              </Text>
               <Group justify="flex-end" mt="md">
                 <Button type="submit">Submit</Button>
               </Group>
