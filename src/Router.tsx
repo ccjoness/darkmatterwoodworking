@@ -10,7 +10,7 @@ const router = createBrowserRouter([
 ]);
 
 export function Router() {
-  // const { setColorScheme } = useMantineColorScheme();
-  // setColorScheme('dark');
+  const { setColorScheme } = useMantineColorScheme();
+  setColorScheme('dark');
   return <RouterProvider router={router} />;
 }
