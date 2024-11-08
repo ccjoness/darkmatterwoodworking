@@ -92,9 +92,9 @@ export function Navigation() {
         <Group justify="space-between" h="100%">
           <img src={DmwLogo} alt="Dmw Logo" />
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link}>
+            {/* <a href="#" className={classes.link}>
               Home
-            </a>
+            </a> */}
             {/* <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a href="#" className={classes.link}>
